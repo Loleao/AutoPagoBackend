@@ -4,5 +4,5 @@ public record CreateCreditCommand(String currency, Double vehiclePrice, Long fee
                                   String url, String gracePeriodType, Long gracePeriodFeeNumber, String interestRateType,
                                   Double interestRatePercentage, Double notarialCost, Double registerCost, Double gps, Double ports,
                                   Double administrationBills, Double lifeInsurancePercentage, Double riskInsurancePercentage, Double cok,
-                                  String initialDate, String finalDate) {
+                                  String initialDate, String finalDate, Long userId) {
 }

@@ -21,7 +21,7 @@ public class CreditCommandServiceImpl implements CreditCommandService {
                 command.initialFeePercentage(), command.finalFeePercentage(), command.url(), command.gracePeriodType(), command.gracePeriodFeeNumber(),
                 command.interestRateType(), command.interestRatePercentage(), command.notarialCost(), command.registerCost(),
                 command.gps(), command.ports(), command.administrationBills(), command.lifeInsurancePercentage(),
-                command.riskInsurancePercentage(), command.cok(), command.initialDate(), command.finalDate());
+                command.riskInsurancePercentage(), command.cok(), command.initialDate(), command.finalDate(), command.userId());
         creditRepository.save(credit);
         return credit.getId();
     }

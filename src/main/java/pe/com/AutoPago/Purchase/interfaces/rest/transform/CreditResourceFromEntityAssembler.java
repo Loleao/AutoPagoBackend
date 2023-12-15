@@ -9,6 +9,6 @@ public class CreditResourceFromEntityAssembler {
                 entity.getInitialFeePercentage(), entity.getFinalFeePercentage(), entity.getUrl(), entity.getGracePeriodType(), entity.getGracePeriodFeeNumber(),
                 entity.getInterestRateType(), entity.getInterestRatePercentage(), entity.getNotarialCost(), entity.getRegisterCost(),
                 entity.getGps(), entity.getPorts(), entity.getAdministrationBills(), entity.getLifeInsurancePercentage(),
-                entity.getRiskInsurancePercentage(), entity.getCok(), entity.getInitialDate(), entity.getFinalDate());
+                entity.getRiskInsurancePercentage(), entity.getCok(), entity.getInitialDate(), entity.getFinalDate(), entity.getUserId());
     }
 }

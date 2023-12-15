@@ -86,13 +86,16 @@ public class Credit {
     @Getter
     private String finalDate;
 
+    @Getter
+    private Long userId;
+
     public Credit() {
     }
 
     public Credit(String currency, Double vehiclePrice, Long feeNumber, Double initialFeePercentage, Double finalFeePercentage, String url, String gracePeriodType,
                   Long gracePeriodFeeNumber, String interestRateType, Double interestRatePercentage, Double notarialCost, Double registerCost,
                   Double gps, Double ports, Double administrationBills, Double lifeInsurancePercentage, Double riskInsurancePercentage,
-                  Double cok, String initialDate, String finalDate) {
+                  Double cok, String initialDate, String finalDate, Long userId) {
         this.currency = currency;
         this.vehiclePrice = vehiclePrice;
         this.feeNumber = feeNumber;
@@ -113,5 +116,6 @@ public class Credit {
         this.cok = cok;
         this.initialDate = initialDate;
         this.finalDate = finalDate;
+        this.userId = userId;
     }
 }
