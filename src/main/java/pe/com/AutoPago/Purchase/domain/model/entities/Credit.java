@@ -18,7 +18,7 @@ public class Credit {
 
     @PositiveOrZero
     @Getter
-    private Long vehiclePrice;
+    private Double vehiclePrice;
 
     @PositiveOrZero
     @Getter
@@ -26,11 +26,11 @@ public class Credit {
 
     @PositiveOrZero
     @Getter
-    private Long initialFeePercentage;
+    private Double initialFeePercentage;
 
     @PositiveOrZero
     @Getter
-    private Long finalFeePercentage;
+    private Double finalFeePercentage;
 
     @Getter
     private String url;
@@ -47,38 +47,38 @@ public class Credit {
 
     @PositiveOrZero
     @Getter
-    private Long interestRatePercentage;
+    private Double interestRatePercentage;
 
     @PositiveOrZero
     @Getter
-    private Long notarialCost;
+    private Double notarialCost;
 
     @PositiveOrZero
     @Getter
-    private Long registerCost;
+    private Double registerCost;
 
     @PositiveOrZero
     @Getter
-    private Long gps;
+    private Double gps;
 
     @PositiveOrZero
     @Getter
-    private Long ports;
+    private Double ports;
 
     @PositiveOrZero
     @Getter
-    private Long administrationBills;
+    private Double administrationBills;
 
     @PositiveOrZero
     @Getter
-    private Long lifeInsurancePercentage;
+    private Double lifeInsurancePercentage;
 
     @PositiveOrZero
     @Getter
-    private Long riskInsurancePercentage;
+    private Double riskInsurancePercentage;
 
     @Getter
-    private Long cok;
+    private Double cok;
 
     @Getter
     private String initialDate;
@@ -89,10 +89,10 @@ public class Credit {
     public Credit() {
     }
 
-    public Credit(String currency, Long vehiclePrice, Long feeNumber, Long initialFeePercentage, Long finalFeePercentage, String url, String gracePeriodType,
-                  Long gracePeriodFeeNumber, String interestRateType, Long interestRatePercentage, Long notarialCost, Long registerCost,
-                  Long gps, Long ports, Long administrationBills, Long lifeInsurancePercentage, Long riskInsurancePercentage,
-                  Long cok, String initialDate, String finalDate) {
+    public Credit(String currency, Double vehiclePrice, Long feeNumber, Double initialFeePercentage, Double finalFeePercentage, String url, String gracePeriodType,
+                  Long gracePeriodFeeNumber, String interestRateType, Double interestRatePercentage, Double notarialCost, Double registerCost,
+                  Double gps, Double ports, Double administrationBills, Double lifeInsurancePercentage, Double riskInsurancePercentage,
+                  Double cok, String initialDate, String finalDate) {
         this.currency = currency;
         this.vehiclePrice = vehiclePrice;
         this.feeNumber = feeNumber;
